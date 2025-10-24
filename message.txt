@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeltaX — Trading Community</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.0/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: url('photo_2025-09-21_12-55-20.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.85);
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      transition: all 0.3s ease;
+    }
+    .glass:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+    .btn {
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 right-0 bg-black/50 backdrop-blur-md z-50 border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <div class="flex items-center space-x-2">
+        <img src="photo_2025-09-21_12-55-20.jpg" alt="DeltaX Logo" class="w-10 h-10 rounded-full border border-emerald-400">
+        <h1 class="text-2xl font-bold text-emerald-400">DeltaX</h1>
+      </div>
+      <nav class="space-x-6 text-sm font-medium">
+        <a href="#features" class="hover:text-emerald-400">📊 Features</a>
+        <a href="#pricing" class="hover:text-emerald-400">💰 Preise</a>
+        <a href="#contact" class="hover:text-emerald-400">📞 Kontakt</a>
+        <a href="https://t.me/DeltaXoffical" target="_blank" class="bg-emerald-500 text-white px-4 py-2 rounded-lg hover:bg-emerald-600 btn">
+          💬 Telegram
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="pt-40 pb-32 text-center relative">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-5xl font-bold mb-6 text-white drop-shadow-lg">📈 Willkommen bei <span class="text-emerald-400">DeltaX</span></h2>
+      <p class="text-gray-300 text-lg mb-8 leading-relaxed">
+        Werde Teil einer starken <span class="text-emerald-400 font-semibold">Trading-Community</span>!  
+        Gemeinsam analysieren wir Märkte, teilen Strategien und nutzen Chancen.  
+        Lerne, tausche dich aus und wachse mit DeltaX.
+      </p>
+      <a href="#features" class="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-xl font-semibold btn">
+        🚀 Jetzt starten
+      </a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-24 max-w-6xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold mb-12 text-emerald-400">✨ Was dich bei uns erwartet</h3>
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <div class="glass p-8 rounded-2xl">
+        <div class="text-4xl mb-4">📊</div>
+        <h4 class="font-semibold text-lg mb-3">Live Marktanalysen</h4>
+        <p class="text-gray-300">Bleibe immer up-to-date mit unseren Marktbeobachtungen und Live-Charts.</p>
+      </div>
+
+      <div class="glass p-8 rounded-2xl">
+        <div class="text-4xl mb-4">💬</div>
+        <h4 class="font-semibold text-lg mb-3">Community Signale</h4>
+        <p class="text-gray-300">Erhalte tägliche Signale und Einschätzungen direkt von erfahrenen Tradern.</p>
+      </div>
+
+      <div class="glass p-8 rounded-2xl">
+        <div class="text-4xl mb-4">📚</div>
+        <h4 class="font-semibold text-lg mb-3">Lernen & Wachsen</h4>
+        <p class="text-gray-300">Profitraining, Tipps & Wissen – alles, um deine Trading-Skills zu verbessern.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-24 bg-black/70">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-12 text-emerald-400">💰 Unsere Mitgliedschaften</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- Starter -->
+        <div class="glass p-10 rounded-2xl">
+          <h4 class="text-xl font-semibold mb-2">🟢 Starter</h4>
+          <p class="text-gray-400 mb-6">Für Einsteiger in die Trading-Welt</p>
+          <p class="text-4xl font-bold mb-6 text-white">€0<span class="text-base font-normal text-gray-400"> / Monat</span></p>
+          <ul class="text-gray-300 mb-6 space-y-2 text-sm">
+            <li>✅ Zugang zur Trading-Gruppe</li>
+            <li>✅ Marktanalysen & Updates</li>
+            <li>✅ Austausch mit Tradern</li>
+          </ul>
+          <a href="https://t.me/DeltaXoffical" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-2 rounded-lg inline-block btn">Beitreten 🚀</a>
+        </div>
+
+        <!-- Pro -->
+        <div class="glass p-10 rounded-2xl border border-emerald-500">
+          <h4 class="text-xl font-semibold mb-2">🔥 Pro</h4>
+          <p class="text-gray-400 mb-6">Für ernsthafte Trader & Strategen</p>
+          <p class="text-4xl font-bold mb-6 text-white">€50<span class="text-base font-normal text-gray-400"> / Monat</span></p>
+          <ul class="text-gray-300 mb-6 space-y-2 text-sm">
+            <li>🚀 Premium Trading Signale</li>
+            <li>📈 Exklusive Markt-Analysen</li>
+            <li>💬 Direkter Support via Telegram</li>
+            <li>🎯 Zugang zu privaten Gruppen</li>
+          </ul>
+          <a href="https://t.me/DeltaXoffical" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-2 rounded-lg inline-block btn">Jetzt upgraden 💎</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact" class="py-24 max-w-4xl mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold mb-6 text-emerald-400">📞 Kontakt</h3>
+    <p class="text-gray-300 mb-8">Du möchtest mehr erfahren oder direkt mit uns traden?  
+      komm in unsere Gruppe 👇</p>
+
+    <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+      <a href="https://t.me/DeltaXoffical" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 px-6 py-3 rounded-lg text-white font-semibold btn w-60 text-center">
+        💬 Telegram Gruppe
+      </a>
+      <a href="https://t.me/DeltaXoffical" target="_blank" class="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-lg text-white font-semibold btn w-60 text-center">
+        
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black/70 text-gray-400 py-8 text-center border-t border-white/10">
+    <p>© 2025 DeltaX — Trading Community</p>
+    <p class="text-sm mt-2">
+      Folge uns auf <a href="https://www.tiktok.com/@deltax.offical?is_from_webapp=1&sender_device=pc" class="text-emerald-400 hover:underline" target="_blank">TikTok 📱</a>
+    </p>
+  </footer>
+
+</body>
+</html>
